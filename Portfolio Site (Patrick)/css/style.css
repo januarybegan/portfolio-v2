@@ -6,16 +6,6 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
-.button: {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -41,34 +31,33 @@ img {
   width: 100%;
 }
 a {
-  color: #ff7f50;
+  color: #3e3d3e;
   text-decoration: none; /* No underlining */
 }
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: #3e3d3e;
 }
 a:hover {
-  color: #cc6540;
+  color: #3e3d3e;
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 a:active { /* selected link */
-  color: #994c30;
+  color: #3e3d3e;
 }
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #3e3d3e;
   text-decoration: underline;
 }
-.button: {
+.button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #dcddde;
+  color: #3e3d3e; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #dcddde; /* width of the border, type, color */
   transition: 0.2s opacity;
-}
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
@@ -76,9 +65,15 @@ a:focus {
 .button:active {
 
 }
-.button.contact {
-  background-color: grey;
-  color: #ff7f50;
+  .button.contact {
+  background-color: transparent;
+  color: #dcddde;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #dcddde;
 }
+}
+.button.contact:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+#index{background-color: white;}
