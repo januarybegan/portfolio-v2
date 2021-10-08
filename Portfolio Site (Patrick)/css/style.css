@@ -58,6 +58,7 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #dcddde; /* width of the border, type, color */
   transition: 0.2s opacity;
+}
 .button:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
   text-decoration: none;
@@ -70,7 +71,7 @@ a:focus {
   color: #dcddde;
   text-transform: uppercase;
   border: 2px solid #dcddde;
-}
+
 }
 .button.contact:hover {
   opacity: 0.8; /* Reduces the opacity of the button to 80% */
