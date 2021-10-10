@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" type="text/css" href="css/style.css"><!--css link-->
 <meta name="viewport" content="width=device-width, initial-scale=1"><!--viewport-->
@@ -13,10 +13,10 @@
     <title>Patrick About Introduction</title>
   </head>
   <body>
-  <header>
+  <header id="hero">
      <div class="container">
         <!--logo-->
-        <img src="logo.svg" class="logo alt="logo" width="40" height="40">
+        <img src="logo.svg" alt="logo" width="40" height="40">
         <nav>
            <ul class="navigation">
               <li><a href="index.html">Home</a></li>
@@ -28,25 +28,25 @@
      </div>
   </header>
   <main id="index">
-    <div><!--orangediv-->
-      <div class="container"><!--yellowdiv-->
+    <div class="container"><!--orangediv-->
+      <div><!--yellowdiv-->
         <h1>About</h1>
 
         </div><!--endyellowdiv-->
       </div><!--endorangediv-->
       <div><!--bottom orange div-->
-        <div><!--bottom yellow div-->
-          <picture class="container">
+        <div class="container"><!--bottom yellow div-->
+          <picture class="leftcolumn">
             <source srcset="img/about/self_portrait_1x.jpg" media="(max-width:767px)">
             <img src="img/about/self_portrait_2x.jpg" alt="My Image">
             </picture>
             <div><!--green div-->
-              <div><!--teal div-->
+              <div class="container"><!--teal div-->
                 <h2>My Story</h2>
                 <p>I’m Patrick, a UX designer based in Colorado by way of Michigan. I have been a graphic designer, a brand designer, an illustrator and now more recently a UX designer. I currently work in higher education and have a passion for the outdoors. I firmly believe design can change the world. Welcome to my portfolio!</p>
                   <a href="files/cvpr.pdf" download class="button">Download my CV</a>
                 </div><!--end teal div-->
-                <div><!--right column teal div-->
+                <div class="container"><!--right column teal div-->
                   <h2>Skills and Tools</h2>
                   <div><!--right column green div-->
                     <div><!--right column top teal div-->
@@ -87,9 +87,9 @@
          <div class="container">
             <h2>Ways to get in touch</h2>
             <!--call to action -->
-            <a href="tel:555.555.5555"class="button">Phone Number </a><!--linked phone number -->
+            <a href="tel:555.555.5555" class="button">Phone Number </a><!--linked phone number -->
          </div>
-         <div>
+         <div class="container">
             <a href="mailto:Email"class="button">Email Me</a><!--linked email-->
          </div>
          <div>
@@ -141,9 +141,11 @@
                 c0.67-1.07,1.07-2.22,1.2-3.46c-0.97-0.07-1.86-0.1-2.66-0.1C14.89,10.82,14.05,10.85,13.12,10.92z"/>
               </svg>
             </a>
-            <p>Copyright © 2021 Patrick Richardson</p>
-            <!--copyright notice-->
-         </div>
+            <div class="clearfloat"></div>
+            <div class="container">
+              <p>Copyright © 2021 Patrick Richardson</p>
+              <!--copyright notice-->
+            </div>
       </footer>
   </body>
 

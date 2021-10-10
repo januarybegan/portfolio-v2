@@ -107,19 +107,27 @@ selector {
   float: left;
   width: 60%;
 }
-
-.diamondtext{
-  position: relative;
+.rightpic{
+  padding: 10px;
   float: left;
-  padding: 40px;
-  width: 80%;
-
+  width: 60%;
+}
+.leftcolumn{
+  width: 30%;
+  float: left;
+  padding: 20px;
 }
 .heading1{
   float:right;
   background-color: grey;
-  padding: 40px;
+  padding: 20px;
   width: 30%;
+}
+.heading3.rightcolumn{
+  background-color: grey;
+  padding 20px;
+  width 5%;
+  display; inline
 }
 
 /* Layout styling */
@@ -154,6 +162,15 @@ nav > ul > li > a {
   nav > ul > li > a:visited. {
 
   }
-  #hero {
+
+#hero {
   background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+  position:fixed;
+  box-shadow:  0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+}
+main {
+  padding-top: 133px;
 }
