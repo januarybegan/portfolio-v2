@@ -15,12 +15,12 @@
    </head>
    <body>
       <header>
-         <div>
+         <div class="container">
             <!--logo-->
-            <img src="logo.svg" alt="logo" width="20" height="20">
+            <img src="logo.svg" class="logo" alt="logo" width="40" height="40">
             <nav>
-               <ul>
-                  <li><a href="index.html.html">Home</a></li>
+               <ul class="navigation">
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="olive.html">Work</a></li>
                   <li><a href="about.html">About</a></li>
                   <li><a href="#contact">Contact</a></li>
@@ -29,27 +29,33 @@
          </div>
       </header>
       <main>
-         <div>
+        <div class="container"
+         <div id=hero>
+
             <h1>
                Hello,<!--Intro header-->
                <span>I’m Patrick, a UX designer, graphic designer and
                creative director based out of Northern Colorado.</span>
             </h1>
          </div>
-         <div>
+
+         <div class="container">
             <h2>Work</h2>
          </div>
+         <div class="row">
          <!-- open row that holds (2) columns for project -->
-         <div>
+         <div class="container">
             <!-- open first column (used for image) -->
 
             <picture>
                <source srcset="img/main/olive_project_port_1x.jpg" media="(max-width:767px)">
                <img src="img/main/olive_project_port_2x.jpg" alt="My Image">
             </picture>
+
          </div>
+       </div>
          <!-- end first column -->
-         <div>
+         <div class="container">
             <!-- open second column (used for text) -->
             <h3>Project name</h3>
             <!-- heading for the project -->
@@ -63,20 +69,21 @@
             <!-- end paragraph -->
             <a href="#" class="button">Read more</a><!-- button or link label -->
          </div>
+       </div>
          <!-- end second column -->
       </main>
       <footer id="contact">
-         <div>
+         <div class="container">
             <h2>Ways to get in touch</h2>
             <!--call to action -->
             <a href="tel:555.555.5555"class="button">Phone Number </a><!--linked phone number -->
          </div>
-         <div>
+         <div class="container">
             <a href="mailto:Email" class="button contact">Email Me</a><!--linked email-->
          </div>
-         <div>
+         <div class="container">
             <!--Social Media Layout and Placeholders-->
-            <a href="LINKEDIN-URL">
+            <a href="LINKEDIN-URL" class="socialicons">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
               <path d="M10,0C15.53,0,20,4.47,20,10c0,5.52-4.48,10-10,10C4.48,20,0,15.52,0,10C0,4.47,4.47,0,10,0z M15.6,14.7
@@ -89,7 +96,7 @@
               	C6.06,4.46,5.33,4.78,5.12,5.4C4.84,6.21,5.42,6.97,6.31,6.97z"/>
               </svg>
             </a>
-            <a href="INSTAGRAM">
+            <a href="INSTAGRAM" class="socialicons">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
               <path d="M12,2.16c3.2,0,3.58,0.01,4.85,0.07c3.25,0.15,4.77,1.69,4.92,4.92c0.06,1.27,0.07,1.65,0.07,4.85
@@ -103,7 +110,7 @@
               	c0.8,0,1.44-0.64,1.44-1.44S19.2,4.15,18.41,4.15z"/>
               </svg>
             </a>
-            <a href="Dribbble">
+            <a href="Dribbble"class="socialicons">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               	 viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
               <style type="text/css">
@@ -123,8 +130,12 @@
               	c0.67-1.07,1.07-2.22,1.2-3.46c-0.97-0.07-1.86-0.1-2.66-0.1C14.89,10.82,14.05,10.85,13.12,10.92z"/>
               </svg>
             </a>
-            <p>Copyright © 2021 Patrick Richardson</p>
-            <!--copyright notice-->
+
+         </div>
+         <div class="clearfloat"></div>
+         <div class="container">
+           <p>Copyright © 2021 Patrick Richardson</p>
+           <!--copyright notice-->
          </div>
       </footer>
    </body>

@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
@@ -78,3 +81,79 @@ a:focus {
   text-decoration: none;
 }
 #index{background-color: white;}
+
+header {
+  background-color: #ffe4c4;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  text-align: center;
+  padding: 10px 0;
+}
+selector {
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+
+.socialicons{
+  width: 5%;
+  display: inline;
+  float: left;
+  padding: 12px
+}
+.clearfloat {clear:both;}
+
+.diamond{
+  padding: 20px;
+  float: left;
+  width: 60%;
+}
+
+.diamondtext{
+  position: relative;
+  float: left;
+  padding: 40px;
+  width: 80%;
+
+}
+.heading1{
+  float:right;
+  background-color: grey;
+  padding: 40px;
+  width: 30%;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+.logo {
+  max-width: 250px;
+}
+ul.navigation. {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  }
+  nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+  nav > ul > li > a:visited. {
+
+  }
+  #hero {
+  background-color: #ffe4c4;
+}
