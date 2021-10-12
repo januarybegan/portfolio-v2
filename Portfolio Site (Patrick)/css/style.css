@@ -125,9 +125,9 @@ selector {
 }
 .heading3.rightcolumn{
   background-color: grey;
-  padding 20px;
-  width 5%;
-  display; inline
+  padding: 20px;
+  width: 5%;
+  display: inline;
 }
 
 /* Layout styling */
@@ -148,7 +148,7 @@ ul.navigation. {
   list-style-type: none;
   padding: 0;
   display: inline-block;
-  }
+}
   nav > ul > li {
   display: inline-block;
 }
