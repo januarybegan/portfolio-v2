@@ -74,6 +74,7 @@ a:focus {
   color: #dcddde;
   text-transform: uppercase;
   border: 2px solid #dcddde;
+  margin-top: 10px;
 
 }
 .button.contact:hover {
@@ -102,33 +103,8 @@ selector {
 }
 .clearfloat {clear:both;}
 
-.diamond{
-  padding: 20px;
-  float: left;
-  width: 60%;
-}
-.rightpic{
-  padding: 10px;
-  float: left;
-  width: 60%;
-}
-.leftcolumn{
-  width: 30%;
-  float: left;
-  padding: 20px;
-}
-.heading1{
-  float:right;
-  background-color: grey;
-  padding: 20px;
-  width: 30%;
-}
-.heading3.rightcolumn{
-  background-color: grey;
-  padding: 20px;
-  width: 5%;
-  display: inline;
-}
+
+
 
 /* Layout styling */
 .container {
@@ -144,7 +120,7 @@ selector {
 .logo {
   max-width: 250px;
 }
-ul.navigation. {
+ul.navigation {
   list-style-type: none;
   padding: 0;
   display: inline-block;
@@ -152,16 +128,14 @@ ul.navigation. {
   nav > ul > li {
   display: inline-block;
 }
-nav > ul > li > a {
+nav > ul > li > a, nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-  nav > ul > li > a:visited. {
 
-  }
 
 #hero {
   background-color: #ffe4c4;
@@ -173,4 +147,34 @@ nav > ul > li > a {
 }
 main {
   padding-top: 133px;
+}
+
+footer {
+  padding-top 10px;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+    nav {
+      width: auto;
+      float: right;
+      margin-top: 4px;
+    }
+
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
 }
