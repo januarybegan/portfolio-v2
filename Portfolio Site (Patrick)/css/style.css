@@ -91,9 +91,6 @@ header {
   text-align: center;
   padding: 10px 0;
 }
-selector {
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-}
 
 .socialicons{
   width: 5%;
@@ -166,15 +163,61 @@ Medium devices (640px and larger)
       float: right;
       margin-top: 4px;
     }
+    #hero {
+      text-align: center;
+    }
+    #hero span {
+  display: block;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 { margin-top: 0;}
+
+
 
 }
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  .col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+#about-page h3 { margin-top: 0;}
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  .col-md-6 {
+  width: 50%;
 }
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#about-page h3 { margin-top: 0;}
