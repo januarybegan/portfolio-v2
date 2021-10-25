@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!--css link-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   <!--font-->
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <meta name="author" content="PatrickRichardson">
   <meta name="description" content="UI/UX and Graphic Design Portfolio for Patrick Richardson">
   <title>Patrick About Introduction</title>
@@ -19,17 +20,25 @@
 
 <body id="about-page">
   <header id="hero">
-    <div class="container">
-      <!--logo-->
-      <img src="logo.svg" alt="logo" width="40" height="40">
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="olive.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+
+          <!--logo-->
+          <img src="logo.svg" class="logo" alt="logo" width="40" height="40">
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="olive.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" class="contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" ><i class="fas fa-bars"></i></a></li>
+
+
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
   <main id="index">
@@ -176,6 +185,10 @@
       </div>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

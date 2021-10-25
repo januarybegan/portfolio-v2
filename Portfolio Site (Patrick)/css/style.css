@@ -89,10 +89,43 @@ header {
   padding: 10px;
   margin: 0px ;
   border-bottom: 3px solid #4a4a4a;
-  text-align: center;
+
   padding: 10px 0;
 }
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
 
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
 .socialicons{
   width: 5%;
   display: inline;
@@ -123,9 +156,7 @@ ul.navigation {
   padding: 0;
   display: inline-block;
 }
-  nav > ul > li {
-  display: inline-block;
-}
+
 nav > ul > li > a, nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
@@ -177,16 +208,28 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+  nav > ul > li {
+  display: inline-block;
+}
+
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
     nav {
       width: auto;
       float: right;
       margin-top: 4px;
     }
+
     #hero {
       text-align: center;
     }
     #hero span {
   display: block;
+}
+.logo {
+  max-width: 150px
 }
 .col-md-6 {
 width: 50%;
@@ -219,6 +262,12 @@ Large devices (1024px or larger)
     float:none;
     margin-top: 4px;
   }
+  .navtoggle ul li:last-child {
+    display: none;
+  }
+  .navtoggle li:last-child {
+  display: none;
+}
 
 #hero {
   text-align: center;
@@ -245,10 +294,17 @@ X-large devices (1440px or larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
     margin-top: 4px;
   }
+  .navtoggle ul li:last-child {
+    display: none;
+  }
+  .navtoggle li:last-child {
+  display: none;
+}
 
 
 #hero {

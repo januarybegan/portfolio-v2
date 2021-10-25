@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!--css link-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,17 +20,25 @@
 
 <body>
   <header id="hero">
-    <div class="container">
-      <!--logo-->
-      <img src="logo.svg" class="logo" alt="logo" width="40" height="40">
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="olive.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div>
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+
+          <!--logo-->
+          <img src="logo.svg" class="logo" alt="logo" width="40" height="40">
+          <nav>
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="olive.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" class="contact" onclick="menuToggle()">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" ><i class="fas fa-bars"></i></a></li>
+
+
+            </ul>
+          </nav>
+        </div>
+      </div>
     </div>
   </header>
   <main>
@@ -230,6 +239,10 @@
       </div>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 
