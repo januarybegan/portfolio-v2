@@ -122,7 +122,7 @@ a:focus {
 }
 
 header {
-  background-color: #ffe4c4;
+  background-color: #dcddde;
   margin: 0px;
   border-bottom: 3px solid #4a4a4a;
   padding: 10px 0;
@@ -214,7 +214,7 @@ nav>ul>li>a, nav>ul>li>a:visited {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #dcddde;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -273,6 +273,7 @@ Medium devices (640px and larger)
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
+
 
   nav {
     width: auto;
