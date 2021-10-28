@@ -1,17 +1,26 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+
+  /* Sets the font size to 16px */
+  font-weight: 300;
+
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+
+  /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 }
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.75em;
   font-weight: 700;
@@ -26,91 +35,119 @@ h3 {
   font-size: 1.75em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 img {
   width: 100%;
 }
+
 a {
   color: #3e3d3e;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+
+  /* No underlining */
 }
-a:visited { /* visited link */
+
+a:visited {
+  /* visited link */
   color: #3e3d3e;
 }
+
 a:hover {
   color: #3e3d3e;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+
+  /* Underlining when hovering over a link */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #3e3d3e;
 }
+
 a:hover,
 a:focus {
   color: #3e3d3e;
   text-decoration: underline;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #dcddde;
-  color: #3e3d3e; /* needed to override the default link color */
+  color: #3e3d3e;
+
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #dcddde; /* width of the border, type, color */
+  border-bottom: 2px solid #dcddde;
+
+  /* width of the border, type, color */
   transition: 0.2s opacity;
   transition-property: opacity;
 }
+
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-.button:active {
 
-}
-  .button.contact {
+.button:active {}
+
+.button.contact {
   background-color: transparent;
   color: #dcddde;
   text-transform: uppercase;
   border: 2px solid #dcddde;
   margin-top: 10px;
-
 }
+
 .button.contact:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-#index{background-color: white;}
+
+#index {
+  background-color: white;
+}
 
 header {
   background-color: #ffe4c4;
-  padding: 10px;
-  margin: 0px ;
+  margin: 0px;
   border-bottom: 3px solid #4a4a4a;
-
   padding: 10px 0;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
-}
 
-.navtoggle.responsive li:last-child  {
-  padding: 0 0 10px;
-}
 .navtoggle li:not(:last-child) {
   display: none;
 }
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
 
 
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -123,57 +160,68 @@ nav > ul {
   font-size: 20px;
   padding-right: 0;
 }
+
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
-.socialicons{
+
+.socialicons {
   width: 5%;
   display: inline;
   float: left;
   padding: 12px
 }
-.clearfloat {clear:both;}
 
-
-
+.clearfloat {
+  clear: both;
+}
 
 /* Layout styling */
 .container {
   padding: 0 15px;
 }
+
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
+
 .logo {
   max-width: 250px;
 }
+
 ul.navigation {
   list-style-type: none;
   padding: 0;
   display: inline-block;
 }
 
-nav > ul > li > a, nav > ul > li > a:visited {
+nav>ul>li>a, nav>ul>li>a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: #4a4a4a;
 }
 
-
-
 #hero {
   background-color: #ffe4c4;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  position:fixed;
-  box-shadow:  0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  position: fixed;
+  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
 }
+
 main {
   padding-top: 133px;
 }
@@ -181,16 +229,23 @@ main {
 footer {
   padding-top: 10px;
 }
+
 .cssanimation {
   width: 100%;
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
+
 .st11 {
   animation-duration: 4s;
   animation-name: color-change;
@@ -198,7 +253,6 @@ height: auto;
   animation-direction: alternate;
   animation-timing-function: linear;
 }
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -208,47 +262,57 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-  nav > ul > li {
-  display: inline-block;
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle ul li:last-child {
+    display: none;
+  }
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .logo {
+    max-width: 150px
+  }
+
+  .col-md-6 {
+    width: 50%;
+    padding: 15px;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
-
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
-
-    #hero {
-      text-align: center;
-    }
-    #hero span {
-  display: block;
-}
-.logo {
-  max-width: 150px
-}
-.col-md-6 {
-width: 50%;
-padding: 15px;
-}
-[class*="col-"] {
-  float: left;
-  padding: 10px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-#about-page h3 { margin-top: 0;}
-
-
-
-}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
@@ -257,35 +321,40 @@ Large devices (1024px or larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
+
   nav {
     width: auto;
-    float:none;
+    float: none;
     margin-top: 4px;
   }
-  .navtoggle ul li:last-child {
+
+
+
+  .navtoggle li:last-child {
     display: none;
   }
-  .navtoggle li:last-child {
-  display: none;
+
+  #hero {
+    text-align: center;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
 
-#hero {
-  text-align: center;
-}
-#hero span {
-display: block;
-}
-.col-lg-7 {
-  width: 60%;
-
-}
-.col-lg-5 {
-  width: 40%
-}
-
-
-#about-page h3 { margin-top: 0;}
-}
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
@@ -299,26 +368,30 @@ X-large devices (1440px or larger)
     width: auto;
     margin-top: 4px;
   }
+
   .navtoggle ul li:last-child {
     display: none;
   }
+
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
+  #hero {
+    text-align: center;
+  }
 
-#hero {
-  text-align: center;
-}
-#hero span {
-display: block;
-}
+  #hero span {
+    display: block;
+  }
 
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-#about-page h3 { margin-top: 0;}
+  #about-page h3 {
+    margin-top: 0;
+  }
 }
