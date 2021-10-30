@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   margin: 0;
@@ -18,7 +18,10 @@ body {
   color: #4a4a4a;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -47,7 +50,7 @@ img {
 }
 
 a {
-  color: #3e3d3e;
+  color: #e69138;
   text-decoration: none;
 
   /* No underlining */
@@ -55,11 +58,11 @@ a {
 
 a:visited {
   /* visited link */
-  color: #3e3d3e;
+  color: #e69138;
 }
 
 a:hover {
-  color: #3e3d3e;
+  color: #e69138;
   text-decoration: underline;
 
   /* Underlining when hovering over a link */
@@ -67,12 +70,12 @@ a:hover {
 
 a:active {
   /* selected link */
-  color: #3e3d3e;
+  color: #e69138;
 }
 
 a:hover,
 a:focus {
-  color: #3e3d3e;
+  color: #e69138;
   text-decoration: underline;
 }
 
@@ -81,7 +84,8 @@ a:focus {
 
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #dcddde;
-  color: #3e3d3e;
+  color: #e69138;
+  margin: 10px;
 
   /* needed to override the default link color */
   font-weight: 400;
@@ -100,8 +104,6 @@ a:focus {
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
-
-.button:active {}
 
 .button.contact {
   background-color: transparent;
@@ -123,8 +125,8 @@ a:focus {
 }
 
 header {
-  background-color: #dcddde;
-  margin: 0px;
+  background-color: #e69138;
+  margin: 0;
   border-bottom: 3px solid #4a4a4a;
   padding: 10px 0;
 }
@@ -136,6 +138,7 @@ header {
 .navtoggle li:not(:last-child) {
   display: none;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
@@ -146,9 +149,7 @@ header {
   padding: 0 0 10px;
 }
 
-
-
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -162,7 +163,8 @@ nav>ul {
   padding-right: 0;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -170,7 +172,7 @@ nav>ul {
   width: 5%;
   display: inline;
   float: left;
-  padding: 12px
+  padding: 12px;
 }
 
 .clearfloat {
@@ -184,6 +186,7 @@ nav>ul {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
@@ -194,6 +197,7 @@ nav>ul {
 
 #hero h1 {
   text-align: center;
+
   /* Centers text */
 }
 
@@ -207,7 +211,8 @@ ul.navigation {
   display: inline-block;
 }
 
-nav>ul>li>a, nav>ul>li>a:visited {
+nav > ul > li > a,
+nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -215,12 +220,12 @@ nav>ul>li>a, nav>ul>li>a:visited {
 }
 
 #hero {
-  background-color: #dcddde;
+  background-color: #e69138;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   position: fixed;
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.15);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.15);
 }
 
 main {
@@ -264,17 +269,17 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
   .navtoggle ul li:last-child {
     display: none;
   }
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
-
 
   nav {
     width: auto;
@@ -291,7 +296,7 @@ Medium devices (640px and larger)
   }
 
   .logo {
-    max-width: 150px
+    max-width: 150px;
   }
 
   .col-md-6 {
@@ -330,8 +335,6 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 
-
-
   .navtoggle li:last-child {
     display: none;
   }
@@ -349,7 +352,7 @@ Large devices (1024px or larger)
   }
 
   .col-lg-5 {
-    width: 40%
+    width: 40%;
   }
 
   #about-page h3 {
