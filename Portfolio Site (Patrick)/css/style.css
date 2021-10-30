@@ -58,7 +58,7 @@ a {
 
 a:visited {
   /* visited link */
-  color: #e69138;
+  color: #3B3B3B;
 }
 
 a:hover {
@@ -70,7 +70,7 @@ a:hover {
 
 a:active {
   /* selected link */
-  color: #e69138;
+  color: #3B3B3B;
 }
 
 a:hover,
@@ -83,15 +83,15 @@ a:focus {
   display: inline-block;
 
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #dcddde;
-  color: #e69138;
+  background-color: #e69138;
+  color: #3B3B3B;
   margin: 10px;
 
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #dcddde;
+  border-bottom: 2px solid #e69138;
 
   /* width of the border, type, color */
   transition: 0.2s opacity;
@@ -107,9 +107,9 @@ a:focus {
 
 .button.contact {
   background-color: transparent;
-  color: #dcddde;
+  color: #e69138;
   text-transform: uppercase;
-  border: 2px solid #dcddde;
+  border: 2px solid #e69138;
   margin-top: 10px;
 }
 
